@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
-
 sudo systemctl start nginx
 sudo systemctl enable nginx
 sudo ufw allow 'Nginx HTTP'
 sudo ufw reload
-sudo systemctl status nginx
 curl -s http://localhost:8080
